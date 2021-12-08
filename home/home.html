@@ -169,7 +169,7 @@
                                         <div class="card-body">
                                             <h4 class="card-title">Eclipse</h4>
                                             <p class="card-text"> 1380$ / 1 hour </p>
-                                            <a href="" class="btn btn-info">View Infomation</a> <a href="../word/Eclipse.docx" class="btn btn-info">Download</a>
+                                            <a href="../Product/product_4.html" class="btn btn-info">View Infomation</a> <a href="../word/Eclipse.docx" class="btn btn-info">Download</a>
                                        </div>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@
                                          <div class="card-body">
                                                 <h4 class="card-title">Azzam</h4>
                                                 <p class="card-text">1400$ / 1 hour</p>
-                                                <a href="" class="btn btn-info">View Infomation</a> <a href="../word/Azzam.docx" class="btn btn-info ">Download</a>
+                                                <a href="../Product/product_5.html" class="btn btn-info">View Infomation</a> <a href="../word/Azzam.docx" class="btn btn-info ">Download</a>
                                         </div>
                                     </div>
                                </div>
@@ -191,7 +191,7 @@
                                     <div class="card-body">
                                          <h4 class="card-title">Margaret</h4>
                                          <p class="card-text">1650$ / 1 hour</p>
-                                         <a href="" class="btn btn-info">View Infomation</a> <a href="../word/Margaret.docx" class="btn btn-info ">Download</a>
+                                         <a href="../Product/product_6.html" class="btn btn-info">View Infomation</a> <a href="../word/Margaret.docx" class="btn btn-info ">Download</a>
                                     </div>
                                  </div>
                             </div>
@@ -209,7 +209,7 @@
                                 <div class="card-body">
                                      <h4 class="card-title">Maltese Falcom</h4>
                                      <p class="card-text">1240$ / 1 hour</p>
-                                     <a href="#" class="btn btn-info">View Infomation</a> <a href="../word/Maltese Falcom.docx" class="btn btn-info ">Download</a>
+                                     <a href="../Product/product_13.html" class="btn btn-info">View Infomation</a> <a href="../word/Maltese Falcom.docx" class="btn btn-info ">Download</a>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +220,7 @@
                                 <div class="card-body">
                                     <h4 class="card-title">Black Pearl</h4>
                                     <p class="card-text">1300$ / 1 hour</p>
-                                    <a href="#" class="btn btn-info">View Infomation</a> <a href="../word/Black Pearl.docx" class="btn btn-info ">Download</a>
+                                    <a href="../Product/product_14.html" class="btn btn-info">View Infomation</a> <a href="../word/Black Pearl.docx" class="btn btn-info ">Download</a>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +231,7 @@
                                 <div class="card-body">
                                     <h4 class="card-title">SignatureCruise Halong</h4>
                                     <p class="card-text">1250$ / 1 hour</p>
-                                    <a href="#" class="btn btn-info">View Infomation</a> <a href="../word/SignatureCruise Halong.docx" class="btn btn-info">Download</a>
+                                    <a href="../Product/product_15.html" class="btn btn-info">View Infomation</a> <a href="../word/SignatureCruise Halong.docx" class="btn btn-info">Download</a>
                                 </div>
                             </div>
                         </div>
@@ -537,26 +537,46 @@
  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>    
 
+<!--Modal Cart-->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">CART</h2>
+
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button class="clear-cart btn btn-danger">Clear Cart</button>
+        <a href="../checkout.html"><button type="button" class="btn btn-primary">Order now</button></a>
+      </div>
+    </div>
+  </div>
+</div> 
+<!--End modal cart-->
 
 
-
-
-
-  
-
-    
-
-
-
-
-    
-
-   
     <script>
         var wow = new WOW();
         wow.init();
     </script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/d15efe8da9.js" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="Gallery/gallery.js">
 
 </body>
 </html>

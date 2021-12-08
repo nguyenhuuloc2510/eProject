@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: #e8cbc0;
+}
+
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.contactUs .tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contactUs .tittle h2{
+    color: white;
+    font-weight: 500;
+}
+
+.from{
+    grid-area: form;
+}
+
+.info{
+    grid-area: info;
+}
+
+.map{
+    grid-area: map;
+}
+
+.contact{
+    padding: 40px;
+    background: white;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact h3{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.fromBox{
+    position: relative;
+    width: 100%;
+}
+
+.fromBox .row50{
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.fromBox .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span{
+    color: #03a9f5;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"]{
+    background: #ff587b;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.inputBox ::placeholder{
+    color: #999;
+}
+
+.info{
+    background: #0e3959;
+}
+
+.info h3{
+    color: white;
+}
+
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: white;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p{
+    color: white;
+    font-size: 1.1em;
+}
+
+.info .infoBox div a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a{
+    color: white;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a:hover{
+    color: white;
+}
+
+.map{
+    padding: 0;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 991px)
+{
+    body{
+        background: #03a9f5;
+    }
+    .contactUs{
+        padding: 20px;
+    }
+    .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form" "info" "map";
+    }
+    .fromBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputBox{
+        width: 100%;
+    }
+    .contact{
+        padding: 30px;
+    }
+    .map{
+        min-height: 300px;
+        padding: 0;
+    }
+}
+.footers a {color:#696969;}
+.footers p {color:#696969;}
+.footers ul {line-height:30px;}
+#social-fb:hover {
+     color: #3B5998;
+     transition:all .001s;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+     transition:all .001s;
+ }
+ #social-gp:hover {
+     color: #d34836;
+     transition:all .001s;
+ }
+ #social-em:hover {
+     color: #f39c12;
+     transition:all .001s;
+ }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand text-red">Marina<span> Fleet</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../About/about3.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Gallery/gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../signup/signup.html">Sign up</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><span style="width: 30px; height: 30px;" class="iconify" data-icon="ant-design:shopping-twotone"></span> (<span class="total-count"></span>)</button>
+            </li>
+          </ul>
+        </div>  
+      </nav>
+    <div class="contactUs">
+        <div class="tittle">
+            <h1 style="margin-top: 5%;" >Contact Us</h1>
+        </div>
+        <div class="box">
+            <!--Contact box-->
+            <div class="contact from">
+                <h3>Send a Messenge</h3>
+                <form>
+                    <div class="fromBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" placeholder="Enter First Name" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="Enter Last Name" required>
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="email" placeholder="Enter Email" required>
+                            </div>
+                            <div class="inputBox">
+                                <span>Mobile</span>
+                                <input type="number" placeholder="Enter Phone Number" required>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea type="text" placeholder="Write your messange here..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Send"></input>
+                            </div>
+                        </div>
+                   
+                    </div>
+                </form>
+            </div>
+            <!--Info box-->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p style="margin-top: 13px;">590 Cach Mang Thang Tam, Ward 11 <br>District 3  HCMC</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="mailto:maiquoctuan2872@gmail.com">maiquoctuan2872@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:+84938490983">+84 938 490 983</a>
+                    </div>
+
+                    <!--Social Link-->
+                    <ul class="sci">
+                        <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Map -->
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15677.2773997461!2d106.6662743!3d10.7868348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1sen!2s!4v1638786016828!5m2!1sen!2s"style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section class="footers bg-light pt-5 pb-3">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 footers-one">
+                 <div class="footers-logo">
+                     <img src="../Marina Fleet.png" alt="Logo" style="width:200px;">
+                 </div>
+                 <div class="footers-info mt-3">
+                     <p>Before you leave to explore islands and the sea, just contact us for getting some good advises. Our expert has direct access for the best charter price. We can help you to understand the terms for your favourite boat rental.</p>
+                 </div>
+                 <div class="social-icons"> 
+                     <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-2x social"></i></a>
+                     <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
+                   <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-2x social"></i></a>
+                   <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
+               </div>
+             </div>
+              <div class="col-xs-12 col-sm-6 col-md-2 footers-two">
+                 <h5> Quick link </h5>
+                 <ul class="list-unstyled">
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../Gallery/gallery.html">Gallery</a></li>
+                <li><a href="../signup/signup.html">Sign up</a></li>
+                <li><a href="../contact.html">Contact us</a></li>
+               </ul>
+             </div>
+              <div class="col-xs-12 col-sm-6 col-md-2 footers-three">
+                 <h5>Information </h5>
+                 <ul class="list-unstyled">
+                <li><a href="">Register Now</a></li>
+                <li><a href="">Advice</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Services</a></li>
+               </ul>
+             </div>
+              <div class="col-xs-12 col-sm-6 col-md-2 footers-four">
+                 <h5>Contact </h5>
+                 <ul class="list-unstyled">
+                <li><ion-icon name="call"></ion-icon> 0914413681</li>
+              <li><ion-icon name="locate"></ion-icon> 590 Cách Mạng Tháng 8, Ward 11, District 3</li>
+               </ul>
+             </div>
+             
+             
+            </div>
+        </div>
+     </section>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d15efe8da9.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

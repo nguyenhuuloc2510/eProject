@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body
+{
+  background: #e8cbc0;
+}
+
+.main 
+{
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 5%;
+} 
+
+h1 
+{
+  font-size: 50px;
+  word-break: break-all;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.row 
+{
+  margin: 10px -20px;
+}
+
+.row,
+.row > .column 
+{
+  padding: 8px;
+}
+
+.column 
+{
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content 
+{
+  background-color: white;
+  padding: 10px;
+}
+
+.show 
+{
+  display: block;
+}
+
+.cat .btn
+{
+  border: none;
+  outline: none;
+  padding: 15px 16px;
+  background-color: white;
+  cursor: pointer;
+  width: 100px;
+}
+
+.cat .btn:hover 
+{
+  background-color: #ddd;
+}
+
+.cat .btn.active 
+{
+  background-color: #666;
+  color: white;
+}
+
+
+
+.zoom 
+{
+transition: transform .5s;
+width: 300px;
+height: 260px;
+margin: 0 auto;
+}
+
+.zoom:hover 
+{
+-ms-transform: scale(1.5); /* IE 9 */
+-webkit-transform: scale(1.5); /* Safari 3-8 */
+transform: scale(1.2); 
+}
+
+.boatImage{
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  border: solid gray medium;
+
+}
+
+.detailImage{
+  margin-top:20px;
+  margin-bottom: 70px;
+}
+
+.row .btn{
+width: 100%;
+}
+
+
+img{
+width: 150px;
+height: 80px;
+}
+
+.footers a {color:#696969;}
+.footers p {color:#696969;}
+.footers ul {line-height:30px;}
+#social-fb:hover {
+     color: #3B5998;
+     transition:all .001s;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+     transition:all .001s;
+ }
+ #social-gp:hover {
+     color: #d34836;
+     transition:all .001s;
+ }
+ #social-em:hover {
+     color: #f39c12;
+     transition:all .001s;
+ }
